@@ -21,8 +21,10 @@ Welcome to the Barber Shop Management System! This project aims to streamline th
    ```bash
    git clone https://github.com/yourusername/barber-shop.git
 ## Images
-![WhatsApp Image 2024-04-26 at 10 53 06 (3)](https://github.com/DevAndroidify/Barber-Shop/assets/138611123/b678f174-0239-47b2-8f92-28920cae073a)
-![WhatsApp Image 2024-04-26 at 10 53 06 (2)](https://github.com/DevAndroidify/Barber-Shop/assets/138611123/9d759781-29ef-4e54-aaf6-a310dfc55d37)
-![WhatsApp Image 2024-04-26 at 10 53 06 (1)](https://github.com/DevAndroidify/Barber-Shop/assets/138611123/44cc9ce9-cfb0-435a-8d46-72bd7c5b5a26)
-![WhatsApp Image 2024-04-26 at 10 53 06](https://github.com/DevAndroidify/Barber-Shop/assets/138611123/9ea07728-40d5-4f05-ac21-be2921e8017a)
-![WhatsApp Image 2024-04-26 at 10 53 05](https://github.com/DevAndroidify/Barber-Shop/assets/138611123/ac44081b-692f-4aa6-9409-78317fbc5333)
+<img src="(https://github.com/DevAndroidify/Barber-Shop/assets/138611123/b678f174-0239-47b2-8f92-28920cae073a)" alt="Image Title" width="300" height="200">
+<img src="[(https://github.com/DevAndroidify/Barber-Shop/assets/138611123/b678f174-0239-47b2-8f92-28920cae073a)](https://github.com/DevAndroidify/Barber-Shop/assets/138611123/b678f174-0239-47b2-8f92-28920cae073a)" alt="Image Title" width="300" height="200">
+<img src="([https://github.com/DevAndroidify/Barber-Shop/assets/138611123/b678f174-0239-47b2-8f92-28920cae073a](https://github.com/DevAndroidify/Barber-Shop/assets/138611123/44cc9ce9-cfb0-435a-8d46-72bd7c5b5a26))" alt="Image Title" width="300" height="200">
+<img src="([https://github.com/DevAndroidify/Barber-Shop/assets/138611123/b678f174-0239-47b2-8f92-28920cae073a](https://github.com/DevAndroidify/Barber-Shop/assets/138611123/9ea07728-40d5-4f05-ac21-be2921e8017a))" alt="Image Title" width="300" height="200">
+
+<img src="([https://github.com/DevAndroidify/Barber-Shop/assets/138611123/b678f174-0239-47b2-8f92-28920cae073a](https://github.com/DevAndroidify/Barber-Shop/assets/138611123/ac44081b-692f-4aa6-9409-78317fbc5333))" alt="Image Title" width="300" height="200">
+
