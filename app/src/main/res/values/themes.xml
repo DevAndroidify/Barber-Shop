@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Barbershop" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">#2c4a7e</item>
+        <item name="colorPrimaryDark">#2c4a7e</item>
+    </style>
+
+    <style name="Theme.Barbershop" parent="Base.Theme.Barbershop" >
+
+    </style>
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+    </style>
+
+</resources>

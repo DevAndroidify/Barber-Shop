@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/selectfragment">
+
+    <fragment
+        android:id="@+id/selectfragment"
+        android:name="com.example.barbershop.selectfragment"
+        android:label="fragment_selectfragment"
+        tools:layout="@layout/fragment_selectfragment" >
+        <action
+            android:id="@+id/action_selectfragment_to_signinfragment"
+            app:destination="@id/signinfragment" />
+        <action
+            android:id="@+id/action_selectfragment_to_loginfragment"
+            app:destination="@id/loginfragment" />
+        <action
+            android:id="@+id/action_selectfragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/signinfragment"
+        android:name="com.example.barbershop.signinfragment"
+        android:label="fragment_signinfragment"
+        tools:layout="@layout/fragment_signinfragment" >
+
+        <argument
+            android:name="selected"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_signinfragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signinfragment_to_addshop"
+            app:destination="@id/addshop" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginfragment"
+        android:name="com.example.barbershop.loginfragment"
+        android:label="fragment_loginfragment"
+        tools:layout="@layout/fragment_loginfragment" >
+        <action
+            android:id="@+id/action_loginfragment_to_addshop"
+            app:destination="@id/addshop" />
+        <action
+            android:id="@+id/action_loginfragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="selected"
+            app:argType="string"
+            android:defaultValue="aaaa" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.barbershop.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+
+        <action
+            android:id="@+id/action_homeFragment_to_loginfragment"
+            app:destination="@id/loginfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addshop"
+        android:name="com.example.barbershop.addshop"
+        android:label="fragment_addshop"
+        tools:layout="@layout/fragment_addshop" />
+    <fragment
+        android:id="@+id/barberplace"
+        android:name="com.example.barbershop.barberplace"
+        android:label="fragment_barberplace"
+        tools:layout="@layout/fragment_barberplace" >
+        <argument
+            android:name="uid"
+            app:argType="string" />
+    </fragment>
+</navigation>

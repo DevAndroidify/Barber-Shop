@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navmenu"
+    app:startDestination="@id/home2">
+    <fragment
+        android:id="@+id/appointment2"
+        android:name="com.example.barbershop.appointment"
+        android:label="fragment_appointment"
+        tools:layout="@layout/fragment_appointment" />
+    <fragment
+        android:id="@+id/more2"
+        android:name="com.example.barbershop.More"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" >
+        <action
+            android:id="@+id/action_more2_to_selectfragment2"
+            app:destination="@id/selectfragment2" />
+        <action
+            android:id="@+id/action_more2_to_onboardingactivity"
+            app:destination="@id/onboardingactivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.barbershop.home"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_home2_to_barberplace2"
+            app:destination="@id/barberplace2" />
+        <action
+            android:id="@+id/action_home2_to_onboardingactivity"
+            app:destination="@id/onboardingactivity"
+            app:popUpTo="@id/home2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_home2_to_search"
+            app:destination="@id/search" />
+    </fragment>
+    <fragment
+        android:id="@+id/barberplace2"
+        android:name="com.example.barbershop.barberplace"
+        android:label="fragment_barberplace"
+        tools:layout="@layout/fragment_barberplace" >
+        <argument
+            android:name="uid"
+            app:argType="string"
+            android:defaultValue="12345" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectfragment2"
+        android:name="com.example.barbershop.selectfragment"
+        android:label="fragment_selectfragment"
+        tools:layout="@layout/fragment_selectfragment" />
+    <activity
+        android:id="@+id/onboardingactivity"
+        android:name="com.example.barbershop.onboardingactivity"
+        android:label="activity_onboardingactivity"
+        tools:layout="@layout/activity_onboardingactivity" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.barbershop.search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

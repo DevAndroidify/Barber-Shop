@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/mainbottomview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/navmenu" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@id/mainbottomview"
+        style="@style/ThemeOverlay.Material3.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:alpha="0.95"
+        app:itemActiveIndicatorStyle="@color/white"
+        app:itemBackground="@android:color/transparent"
+        android:background="#95B5ED"
+        app:labelVisibilityMode="labeled"
+        app:itemIconPadding="10dp"
+        app:itemPaddingTop="10dp"
+        app:itemIconTint="#2c4a7e"
+        app:itemTextColor="#2c4a7e"
+        app:itemPaddingBottom="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:menu="@menu/botttommenu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
